@@ -7,6 +7,7 @@
     "@testing-library/jest-dom": "^5.11.4",
     "@testing-library/react": "^11.1.0",
     "@testing-library/user-event": "^12.1.10",
+    "env-cmd": "^10.1.0",
     "firebase": "^8.1.2",
     "react": "^17.0.1",
     "react-dom": "^17.0.1",
@@ -14,8 +15,12 @@
     "web-vitals": "^0.2.4"
   },
   "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
+    "start-dev": "env-cmd dev,com react-scripts start",
+    "build-dev": "env-com dev,com react-scripts build",
+    "start-qa": "env-cmd qa,com react-scripts start",
+    "build-qa": "env-com qa,com react-scripts build",
+    "start-prod": "env-cmd prod,com react-scripts start",
+    "build-prod": "env-com prod,com react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
