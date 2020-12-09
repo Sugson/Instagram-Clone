@@ -1,30 +1,53 @@
+#exception
+!.gitignore
+
+#editor
+.vscode/
+
+# testing
+coverage
+
+# production
+build
 
 # environment
 .env-cmdrc
-
-
-# dependencies
-node_modules/
-/node_modules
-/.pnp
-.pnp.js
-
-
-# testing
-/coverage
-
-# production
-/build
-
-# misc
-.DS_Store
 .env.local
 .env.development.local
 .env.test.local
 .env.production.local
 
-npm-debug.log*
+# dependencies
+node_modules/
+jspm_packages/
+web_modules/
+
+# misc cache
+npm
+.npm
+.cache/
+.DS_Store
+.changelog
+.eslintcache
+*.tsbuildinfo
+.yarn/cache
+.yarn/unplugged
+.yarn/build-state.yml
+.yarn/install-state.gz
+.pnp
+.pnp.*
+
+# logs
+logs
+*.log
+yarn.lock
 yarn-debug.log*
 yarn-error.log*
+npm-debug.log*
+lerna-debug.log*
 
-
+# Runtime data
+pids
+*.pid
+*.seed
+*.pid.lock
