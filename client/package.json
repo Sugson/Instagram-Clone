@@ -15,12 +15,14 @@
     "web-vitals": "^0.2.4"
   },
   "scripts": {
-    "start-dev": "env-cmd dev,com react-scripts start",
-    "build-dev": "env-com dev,com react-scripts build",
-    "start-qa": "env-cmd qa,com react-scripts start",
-    "build-qa": "env-com qa,com react-scripts build",
-    "start-prod": "env-cmd prod,com react-scripts start",
-    "build-prod": "env-com prod,com react-scripts build",
+    "start-dev": "env-cmd -e dev,com react-scripts start",
+    "build-dev": "env-com -e dev,com react-scripts build",
+    "start-qa": "env-cmd -e qa,com react-scripts start",
+    "build-qa": "env-com -e qa,com react-scripts build",
+    "start-prod": "env-cmd -e prod,com react-scripts start",
+    "build-prod": "env-com -e prod,com react-scripts build",
+    "start": "env-cmd -e prod,com react-scripts start",
+    "build": "env-com -e prod,com react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
